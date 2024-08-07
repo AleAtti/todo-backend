@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\ToDoModel;
-use Illuminate\Contracts\Support\ValidatedData;
 use Illuminate\Http\Request;
 use Nette\Schema\ValidationException;
 
@@ -19,6 +18,8 @@ class ToDoController extends Controller
         ], 200);
     }
 
+    /// Store data
+    ///
     public function store(Request $request){
         try {
 
